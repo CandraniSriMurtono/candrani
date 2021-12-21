@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<html lang="en">
+<center>  
+  <head>
+    <meta charset="UTF-8">
+    <title>Candrani Sri Murtono's web</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css"
+  </head>
+</center>
+
+<body>
+  <div class="header">
+    <center><h1>KALKULATOR LINGKARAN</h1></center>
+  </div>
+
+  <div class="header">
+    <center>
+      <h7>This page is made to complete "Pemrograman Lanjutan" course</h7>
+    </center>
+  </div>
+
+<br>
+<br>
+<br>
+
+  <center>
+    <form action="">
+      <input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="jari"> 
+      <button onclick="lingkaran()">Hitung Keliling Lingkaran</button>
+      Hasil : <span id="hasil"></span>
+      <br>
+      <br>
+      <input type="number" placeholder="Masukkan Nilai Jari-Jari Lingkaran (cm)" id="luas"> 
+      <button onclick="lingkaran()">Hitung Luas Lingkaran</button>
+      Hasil : <span id="hasilluas"></span>
+    </form>
+  </center>
+	
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
+{% endblock meta %}
+
+
